@@ -1,5 +1,6 @@
 body {
     box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 .header {
@@ -64,10 +65,16 @@ body {
     margin-bottom: 1.2rem;
 }
 
+.main__apropos__description, .main__section__description__liste__element, .main__section__description, .main__footer__description__liste__element {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 0.8rem;
+    line-height: normal;
+}
+
 .main__wrapperd {
     padding: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-
