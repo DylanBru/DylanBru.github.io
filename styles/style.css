@@ -1,6 +1,8 @@
 .body {
     box-sizing: border-box;
     font-family: 'Noto Sans', sans-serif;
+    height: 100vh;
+    width: 100vh;
 }
 
 .header {
@@ -15,7 +17,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.header__wrapperphoto {
+.header__wrapperPicture {
     background-image: url("../Images/Photo\ CV\ sans\ fond.png"), linear-gradient(180deg, #E0EAF5 0%, #243C54 100%);
     background-repeat: no-repeat;
     background-position: center;
@@ -26,7 +28,7 @@
     height: 15vh;
 }
 
-.header__wrappertitre {
+.header__title {
     color: white;
     margin-left: 3rem;
 }
@@ -49,37 +51,15 @@
     height: 80vh;
 }
 
-.main__wrapperg {
-    width: calc(100%/3);
-    background-color: #E0EAF5;
+.wrapperD {
     padding: 2rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
-.main__wrapperg__titre {
-    font-weight: 500;
-    font-size: 2rem;
-    color: #264C77;
-    margin-bottom: 1.2rem;
-}
-
-.main__apropos__description, .main__section__description__liste__element, .main__section__description, .main__footer__description__liste__element, .main__wrapperd__description {
-    font-size: 1rem;
-    font-weight: 400;
-    margin-bottom: 0.8rem;
-    line-height: normal;
-}
-
-.main__wrapperd {
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.main__wrapperd__titre {
+.exp__title,
+.formation__title {
     display: inline-block;
     font-weight: 500;
     font-size: 2rem;
@@ -89,20 +69,71 @@
     margin-bottom: 1.2rem;
 }
 
-.main__wrapperd__time {
+.exp__time,
+.formation__time {
     font-weight: 400;
     font-size: 1rem;
     color: #264C77;
     line-height: normal;
 }
 
-.main__wrapperd__titre2 {
+.exp__subtitle,
+.formation__subtitle {
     font-weight: 500;
     color: #264C77;
     font-size: 1.2rem;
     line-height: normal;
 }
 
-.main__wrapperd__section {
-    margin: 1.3rem 0;
+.wrapperG {
+    width: calc(100vh/3);
+    background-color: #E0EAF5;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
+
+.about__title,
+.softSkills__title,
+.skills__title,
+.languages__title,
+.contact__title {
+    font-weight: 500;
+    font-size: 2rem;
+    color: #264C77;
+    margin-bottom: 1.2rem;
+}
+
+.exp__description,
+.formation__description,
+.about__description,
+.softSkills__element,
+.skills__element,
+.languages__description,
+.contact__element {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 0.8rem;
+    line-height: normal;
+}
+
+
+
+/* Mobile + */
+@media (min-width: 400px) { /* ... */ }
+
+/* Phablets */
+@media (min-width: 550px) { /* ... */ }
+
+/* Tablettes */
+@media (min-width: 750px) { /* ... */ }
+
+/* Desktop */
+@media (min-width: 1000px) { /* ... */ }
+
+/* Desktop HD */
+@media (min-width: 1200px) { /* ... */ }
+
+/* Desktop Wide */
+@media (min-width: 1400px) { /* ... */ }
