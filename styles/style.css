@@ -118,8 +118,33 @@
     line-height: normal;
 }
 
+.wrapper__contact__element{
+    display: flex;
+    align-items: center;
+}
 
+.icon{
+    height: calc(32 * var(--res));
+    width: calc(32 * var(--res));
+    background-color: white;
+    border-radius: 50%;
+    margin-right: calc(16 * var(--res));
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70%;
+}
 
+.icon__phone{
+    background-image: url("../Images/phone-enabled-outline.svg");
+}
+
+.icon__mail{
+    background-image: url("../Images/mail-outline.svg");
+}
+
+.icon__localisation{
+    background-image: url("../Images/travel-map-location-pin-navigation-map-maps-pin-gps-location.svg");
+}
 
 
 /* Desktop */
