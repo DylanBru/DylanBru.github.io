@@ -1,19 +1,24 @@
 .body {
-    --res: 0.1vmin;
+    --res: 0.09vmin;
     box-sizing: border-box;
     font-family: 'Noto Sans', sans-serif;
 }
 
 .header {
-    height: 20vh;
+    height: 17vh;
     background-color: #264C77;
     display: flex;
     align-items: center;
-    padding-left: calc(32 * var(--res)) ;
+    padding-left: calc(36 * var(--res)) ;
 }
 
 .h1, .h2, .h3 {
     font-family: 'Poppins', sans-serif;
+}
+
+.h1{
+    display: inline-block;
+    margin-right: calc(36 * var(--res)) ;
 }
 
 .header__wrapperPicture {
@@ -23,8 +28,8 @@
     background-size: 110%;
     border-radius: 50%;
     border: calc(6 * var(--res)) solid white;
-    width: 17vmin;
-    height: 17vmin;
+    width: 13vmin;
+    height: 13vmin;
 }
 
 .header__title {
@@ -33,76 +38,90 @@
 }
 
 .header__h1 {
-    font-size: calc(64 * var(--res));
+    font-size: calc(54 * var(--res));
     font-weight: 600;
-    margin-bottom: calc(19 * var(--res));
+    margin-bottom: calc(18 * var(--res));
 }
 
 .header__h2 {
     font-family: 'Noto Sans', sans-serif;
-    font-size: calc(32 * var(--res));
+    font-size: calc(30 * var(--res));
     font-weight: 400;
+}
+
+.bi{
+    font-size: calc(30 * var(--res));
+    color: #E0EAF5;
+}
+
+.socialNetwork{
+    justify-self: start;
 }
 
 .main {
     display: flex;
     flex-direction: row-reverse;
-    height: 100vh;
 }
 
 .wrapperD {
-    padding: calc(32 * var(--res));
+    padding: calc(36 * var(--res));
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    gap: calc(30 * var(--res));
     width: calc(200vw/3);
+}
+
+.exp__section,
+.formation__section{
+    margin-bottom: calc(18 * var(--res));
 }
 
 .exp__title,
 .formation__title {
     display: inline-block;
     font-weight: 500;
-    font-size: calc(32 * var(--res));
+    font-size: calc(24 * var(--res));
     color: white;
     background-color: #264C77;
     padding: 0.5rem;
-    margin-bottom: calc(19 * var(--res));
+    margin-bottom: calc(18 * var(--res));
 }
 
 .exp__time,
 .formation__time {
     font-weight: 400;
-    font-size: calc(16 * var(--res));
+    font-size: calc(18 * var(--res));
     color: #264C77;
     line-height: normal;
 }
 
 .exp__subtitle,
-.formation__subtitle {
+.formation__subtitle{
     font-weight: 500;
     color: #264C77;
-    font-size: calc(19 * var(--res));
+    font-size: calc(18 * var(--res));
     line-height: normal;
 }
 
 .wrapperG {
     width: calc(100vw/3);
     background-color: #E0EAF5;
-    padding: calc(32 * var(--res));
+    padding: calc(36 * var(--res));
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    gap: calc(30 * var(--res));
 }
 
 .about__title,
 .softSkills__title,
 .skills__title,
 .languages__title,
+.hobbies__title,
 .contact__title {
     font-weight: 500;
-    font-size: calc(32 * var(--res));
+    font-size: calc(24 * var(--res));
     color: #264C77;
-    margin-bottom: calc(19 * var(--res));
+    margin-bottom: calc(18 * var(--res));
 }
 
 .exp__description,
@@ -111,11 +130,25 @@
 .softSkills__element,
 .skills__element,
 .languages__description,
+.hobbies__description,
 .contact__element {
-    font-size: calc(16 * var(--res));
+    font-size: calc(18 * var(--res));
     font-weight: 400;
-    margin-bottom: calc(12 * var(--res));;
-    line-height: normal;
+    line-height: 120%;
+}
+
+.about__description{
+    margin-bottom: calc(12 * var(--res));
+}
+
+.softSkills__element,
+.skills__element,
+.contact__element{
+    margin-bottom: calc(6 * var(--res));
+}
+
+.h4{
+    font-weight: 600;
 }
 
 .wrapper__contact__element{
@@ -124,11 +157,11 @@
 }
 
 .icon{
-    height: calc(32 * var(--res));
-    width: calc(32 * var(--res));
+    height: calc(30 * var(--res));
+    width: calc(30 * var(--res));
     background-color: white;
     border-radius: 50%;
-    margin-right: calc(16 * var(--res));
+    margin-right: calc(18 * var(--res));
     background-repeat: no-repeat;
     background-position: center;
     background-size: 70%;
@@ -146,11 +179,10 @@
     background-image: url("../Images/travel-map-location-pin-navigation-map-maps-pin-gps-location.svg");
 }
 
+.iconToAdd{
+    visibility: hidden;
+}
 
-/* Desktop */
-/* Orientation : portrait pour gérer le basculement des mobiles */
-@media (max-width: 1100px) and (orientation:portrait) {
-    .main {
-        height: 80vh;
-    }
+.toImprove{
+    display: none;
 }

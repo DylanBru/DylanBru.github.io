@@ -14,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 </head>
 
 <body class="body">
@@ -21,51 +22,82 @@
         <div class="header__wrapperPicture">
         </div>
         <div class="header__title">
-            <h1 class="h1 header__h1">Dylan BRU</h1>
-            <h2 class="h2 header__h2">Développeur Web Full Stack</h2>
+            <div class="header__name">
+                <h1 class="h1 header__h1">Dylan BRU</h1> 
+                <a href="" class="iconToAdd">
+                    <i class="bi bi-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/dylanbru/">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+            </div>
+            <h2 class="h2 header__h2">Développeur Web Symfony</h2>
+        </div>
+        <div class="socialNetwork">
+            
         </div>
     </header>
     <main class="main">
         <div class="wrapperD">        
             <section class="exp">
-                <h2 class="h2 exp__title">Expérience professionnelle</h2>
+                <h2 class="h2 exp__title">Expériences / Projets notables</h2>
+                <section class="exp__section toImprove">
+                    <span class="exp__time"><time datetime="2023">septembre 2023</time> - <time datetime="2023">octobre2023</time></span> 
+                    <h3 class="h3 exp__subtitle">Projet de fin de formation développeur Web 
+                        (École O’Clock)</h3>
+                    <ul class="exp__description">
+                        <p>
+                        Lien vers le projet / repo Github
+                        Développement en équipe de [...] 
+                        Technologies utilisées : 
+                        </p>
+                        <li>
+                            &#8226; Symfony
+                        </li>
+                    </ul>
+                </section>
                 <section class="exp__section">
-                    <span class="exp__time"><time datetime="2020">2020</time> - aujourd'hui</span> 
-                    <h3 class="h3 exp__subtitle">Gestion de la comptabilité d’une association</h3>
+                    <span class="exp__time"><time datetime="2017">2017</time> - aujourd'hui</span> 
+                    <h3 class="h3 exp__subtitle">Cours à domicile (bénévolat)</h3>
                     <p class="exp__description">
-                        Enregistrement des opérations comptables, rapprochement bancaire
+                        Communication, Flexibilité, Empathie
                     </p>
                 </section>
                 <section class="exp__section">
                     <span class="exp__time"><time datetime="2020">2020</time> - <time datetime="2023">2023</time></span> 
                     <h3 class="h3 exp__subtitle">Gestion d’une micro-entreprise (nettoyage)</h3>
                     <p class="exp__description">
-                        Déclaration mensuelle du chiffre d’affaire, traitement de factures et devis, élaboration du budget, gestion des stocks
+                        Organisation, Relation client
                     </p>
                 </section>
                 <section class="exp__section">
                     <span class="exp__time"><time datetime="2018">2018</time> - <time datetime="2020">2020</time></span> 
                     <h3 class="h3 exp__subtitle">Intérim en tant qu’agent d’accueil, magasinier et préparateur de commande</h3>
                     <p class="exp__description">
-                        Accueil des clients, gestion des stocks, saisie informatique
+                        Collaboration, Adaptabilité
                     </p>
                 </section>
             </section>
             <section class="formation">
                 <h2 class="h2 formation__title">Formation</h2>
                 <section class="formation__section">
+                    <span class="formation__time"><time datetime="2023">Mai 2023</time> - <time datetime="2023">Octobre 2023</time></span> 
+                    <h3 class="h3 formation__subtitle">Formation développeur web et web mobile - niveau V</h3>
+                    <ul class="formation__description">
+                        <p>
+                        798 heures / Ecole O’Clock (téléprésentiel)
+                        </p>
+                        <li>&#8226; 3 mois de socle (HTML, CSS,  PHP, JavaScript, MySQL)</li>
+                        <li>&#8226; 1 mois de spécialisation sur le framework Symfony</li>
+                        <li>&#8226; 1 mois de projet professionnalisant</li>
+                    </ul>
+                </section>
+                <section class="formation__section">
                     <span class="formation__time"><time datetime="2017">2017</time> - <time datetime="2018">2018</time></span> 
                     <h3 class="h3 formation__subtitle">D.U.T. génie biologique - option génie de
                         l'environnement</h3>
                     <p class="formation__description">
                         Matières principales : Traitement de l'eau et assainissement, Hydrogéologie, Chimie environnementale, Microbiologie de l'eau
-                    </p>
-                </section>
-                <section class="formation__section">
-                    <span class="formation__time"><time datetime="2016">2016</time> - <time datetime="2017">2017</time></span> 
-                    <h3 class="h3 formation__subtitle">École d'ingénieur</h3>
-                    <p class="formation__description">
-                        Matières principales : Cinétique chimique, Dynamique des fluides, Thermodynamique, Bioremédiation des sols
                     </p>
                 </section>
                 <section class="formation__section">
@@ -88,34 +120,44 @@
             <aside class="about">
                 <h2 class="h2 about__title"> &Agrave; propos</h2>
                 <p class="about__description">
-                    Marié - 26 ans - Permis B
+                    Après plus de 2 années d’auto-entreprenariat, j’ai décidé de découvrir de nouveaux horizons.
                 </p>
                 <p class="about__description">
-                    Après plus de 2 années d’autoentreprenariat et gérant la comptabilité d’une association depuis 2020, j’ai acquis de nombreuses compétences en gestion et bureautique.
+                    Désirant faire travailler mon sens de la logique, je me suis orienté dans le milieu du développement web qui ne manque pas de m’offrir de nombreux challenges passionnants.
                 </p>
                 <p class="about__description">
-                    Rigoureux et organisé, j’ai à coeur d’atteindre les objectifs qui me sont fixés.
+                    Aujourd’hui, je cherche un travail stable qui me permette de m’épanouir au quotidien.
                 </p>
             </aside>
             <section class="softSkills">
                 <h2 class="h2 softSkills__title">Qualités</h2>
-                <p class="softSkills__description">
-                    <ul class="softSkills__list">
-                        <li class="softSkills__element">Rigueur</li>
-                        <li class="softSkills__element">Autonomie</li>
-                        <li class="softSkills__element">&Eacute;coute</li>
-                    </ul>
-                </p>
+                <ul class="softSkills__description">
+                    <li class="softSkills__element">Rigueur</li>
+                    <li class="softSkills__element">Autonomie</li>
+                    <li class="softSkills__element">Curiosité</li>
+                    <li class="softSkills__element">&Eacute;coute</li>
+                </ul>
             </section>
             <section class="skills">
                 <h2 class="h2 skills__title">Compétences</h2>
-                <p class="skills__description">
-                    <ul class="skills__list">
-                        <li class="skills__element">Excel</li>
-                        <li class="skills__element">Word</li>
-                        <li class="skills__element">Figma</li>
+                    <ul class="skills__description">
+                        <li class="skills__element">
+                            <h4 class="h4">Intégration Web :</h4>
+                            HTML, CSS
+                        </li>
+                        <li class="skills__element">
+                            <h4 class="h4">Développement Backend :</h4>
+                            PHP
+                        </li>
+                        <li class="skills__element">
+                            <h4 class="h4">Développement Frontend :</h4> 
+                            JavaScript Vanilla
+                        </li>
+                        <li class="skills__element">
+                            <h4 class="h4">Maquettage Web :</h4>
+                            Figma
+                        </li>
                     </ul>
-                </p>
             </section>
             <section class="languages">
                 <h2 class="h2 languages__title">Langues</h2>
@@ -123,10 +165,15 @@
                     Anglais : niveau intermédiaire
                 </p>
             </section>
+            <section class="hobbies">
+                <h2 class="h2 hobbies__title">Centres d'intérêt</h2>
+                <p class="hobbies__description">
+                    Randonnée, jeux de stratégie...
+                </p>
+            </section>
             <footer class="footer">
                 <h2 class="h2 contact__title">Contact</h2>
-                <p class="contact__description">
-                    <ul class="contact__list">
+                    <ul class="contact__description">
                         <li class="contact__element">
                             <div class="wrapper__contact__element">
                                 <div class="icon icon__phone">
@@ -144,11 +191,10 @@
                             <div class="wrapper__contact__element">
                                 <div class="icon icon__localisation">
                                 </div>
-                                <data class="contact__data">6 rue Marcel Dauzier <br> 15130 Vézac</data> 
+                                <data class="contact__data">15130 Vézac</data> 
                             </div>
                         </li>
                     </ul>
-                </p>
             </footer>
         </div> 
     </main>
